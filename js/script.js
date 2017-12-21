@@ -27,4 +27,31 @@
 
 
 // DOCUMENT READY FUNCTION
+var userChoice="paper";
+var computerChoice="scissors";
+var winner="rock";
+var choices=["rock","paper","scissors"];
 
+console.log(choices.length);
+
+var z=Math.floor(Math.random(choices.length)*42);
+
+console.log(choices[z]);
+
+var username = "ScriptEd";
+var password = "IL0veC0de"; 
+
+$("button").click(function(){
+    
+var inputus=$("#username").val();  
+var inputpas=$("#password").val();
+
+ if(inputus===username && inputpas===password)
+{  
+    alert("You Gucci");
+}
+else {
+        alert("Try Again");
+}
+    
+});
